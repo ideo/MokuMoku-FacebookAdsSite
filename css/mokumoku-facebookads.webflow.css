@@ -266,6 +266,7 @@
 }
 
 .modalwrapper {
+  display: none !important;
   position: fixed;
   left: 0%;
   top: 0%;
@@ -276,7 +277,16 @@
   padding-top: 80px;
   background-color: rgba(0, 0, 0, 0.32);
   text-align: center;
+  opacity: 0 !important;
+  transition: opacity 1s 1s;
+  -webkit-transition: opacity 1s 1s;
 }
+
+.modal-inView {
+  opacity: 1 !important;
+  display: block !important;
+}
+
 
 .div-block-10 {
   position: relative;
