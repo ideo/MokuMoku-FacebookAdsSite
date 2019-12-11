@@ -1,8 +1,15 @@
 var modal = document.getElementById("alertModal");
 var button = document. getElementById("signUpButton");
+var button2 = document. getElementById("signUpButton2");
 var close = document.getElementById("closeButton");
 
 button.onclick = function() {
+    modal.classList.add("modal-inView");
+    // modal.style.display = "block";
+    console.log("modal");
+  }
+  
+button2.onclick = function() {
     modal.classList.add("modal-inView");
     // modal.style.display = "block";
     console.log("modal");

@@ -42,8 +42,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- End Google Tag Manager (noscript) -->
   <div class="modalwrapper div-block-11" id="alertModal">
     <div class="div-block-10 w-clearfix"><img id="closeButton" src="images/x_black.svg" alt="" class="image-3">
-      <h1 class="heading-6">We want to hear from you!</h1>
-      <p class="paragraph-2">Thank you for your interest in Get Seated! We are still fine-tuning the details, but when it’s ready for launch, you’ll be the first to know. <br><br>Until then, we would love to get your feedback. If you’re willing to speak with us about your cafe-working needs, please provide your email address. <br><br>We promise not to spam or share your email with anyone else.<br><br>- The Get Seated Team<br><a href="mailto:hello@getseated.app?subject=Question%20from%20Get%20Seated%20Website">hello@getseated.app</a></p>
+      <h1 class="heading-6" id="modalTitle">We want to hear from you!</h1>
+      <p class="paragraph-2"><span id="modalText">Thank you for your interest in Get Seated! We are still fine-tuning the details, but when it’s ready for launch, you’ll be the first to know. <br><br>Until then, we would love to get your feedback. If you’re willing to speak with us about your cafe-working needs, please provide your email address. <br><br>We promise not to spam or share your email with anyone else.</span><br><br>- The Get Seated Team<br><a href="mailto:hello@getseated.app?subject=Question%20from%20Get%20Seated%20Website">hello@getseated.app</a></p>
       <div>
         <div class="form-block w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="form">
@@ -63,9 +63,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="section languagelink">
     <div class="container w-container">
       <div class="div-block-8">
-        <h1 class="heading-5">ENGLISH</h1>
+        <a class="languageButtons" href=# onclick="setLanguage('en')"><h1 class="heading-5" id="en">ENGLISH</h1></a>
         <div class="div-block-9"></div>
-        <h1 class="heading-5 languagelink">日本語</h1>
+        <a class="languageButtons" href=# onclick="setLanguage('ja')"><h1 class="heading-5 languagelink" id="ja">日本語</h1></a>
       </div>
       <div class="columns w-row">
         <div class="column-3 w-col w-col-7">
@@ -73,7 +73,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="div-block-3"></div>
             <h1 class="heading">Get Seated,</h1>
             <h2 class="heading-2">so you can get working.</h2>
-            <h3 class="heading-3">Find nearby spaces and people that match your workstyle then reserve a spot to join them.</h3>
+            <h3 class="heading-3" id="hero">Find nearby spaces and people that match your workstyle then reserve a spot to join them.</h3>
+            <div class="div-block-7 tracking-moku-tag hero-div"><a href="#" id="signUpButton" class="button w-button hero-button" data-ix="new-interaction">SIGN UP FOR X YEN PER HOUR</a></div>
           </div>
         </div>
         <div class="column w-col w-col-1"></div>
@@ -91,21 +92,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container-2 w-container">
       <div class="columns-2 w-row">
         <div class="column-5 w-col w-col-6">
-          <h1 class="heading-4">Find cafe seats that are open now</h1><img src="images/FindSeatsMockup.png" srcset="images/FindSeatsMockup-p-1080.png 1080w, images/FindSeatsMockup.png 1329w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 326px, 432px" alt="" class="image-2">
-          <p class="paragraph">See which seats are open at cafes near you and review details to find the ones that match your needs.</p>
+          <h1 class="heading-4" id="findingTitle">Find cafe seats that are open now</h1><img src="images/FindSeatsMockup.png" srcset="images/FindSeatsMockup-p-1080.png 1080w, images/FindSeatsMockup.png 1329w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 326px, 432px" alt="" class="image-2">
+          <p class="paragraph" id="findingParagraph">See which seats are open at cafes near you and review details to find the ones that match your needs.</p>
         </div>
         <div class="column-6 mobile-description-2 w-col w-col-6">
-          <h1 class="heading-4">Reserve a seat for now or later</h1><img src="images/ReserveSeatsMockup.png" srcset="images/ReserveSeatsMockup-p-500.png 500w, images/ReserveSeatsMockup-p-800.png 800w, images/ReserveSeatsMockup.png 1338w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 326px, 432px" alt="" class="image-2 mobile-2">
-          <p class="paragraph">Whether you’re planning ahead or need a seat in a pinch, we have you covered.</p>
+          <h1 class="heading-4" id="bookingTitle">Reserve a seat for now or later</h1><img src="images/ReserveSeatsMockup.png" srcset="images/ReserveSeatsMockup-p-500.png 500w, images/ReserveSeatsMockup-p-800.png 800w, images/ReserveSeatsMockup.png 1338w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 326px, 432px" alt="" class="image-2 mobile-2">
+          <p class="paragraph" id="bookingParagraph">Whether you’re planning ahead or need a seat in a pinch, we have you covered.</p>
         </div>
       </div>
-      <div class="div-block-7 tracking-moku-tag"><a href="#" id="signUpButton" class="button w-button" data-ix="new-interaction">SIGN UP FOR X YEN PER HOUR</a></div>
+      <div class="div-block-7 tracking-moku-tag"><a href="#" id="signUpButton2" class="button w-button" data-ix="new-interaction">SIGN UP FOR X YEN PER HOUR</a></div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/modal.js" type="text/javascript"></script>
   <script src="js/contact.js" type="text/javascript"></script>
+  <script src="js/language.js" type="text/javascript"></script>
+  <script src="js/languageSwitch.js" type="text/javascript"></script>
+  <script>setLanguage('ja')</script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
