@@ -586,4 +586,14 @@ a {
     font-size: 30px;
     line-height: 60px;
   }
+
+  .modalwrapper {
+    overflow: scroll;
+  }
+
+  .w-clearfix {
+    top: 0;
+    transform: none !important;
+  }
+
 }
