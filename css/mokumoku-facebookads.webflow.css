@@ -224,6 +224,7 @@ a {
   color: #ff5c5f;
   font-weight: 700;
   font-size: 24px;
+  transition: background,color 0.2s ease-in-out;
 }
 
 .hero-button {
@@ -233,7 +234,6 @@ a {
   border: #ff5c5f 4px solid;
   color: white;
   font-size:18px;
-  transition: background,color 0.2s ease-in-out;
   /* border-radius: 200px; */
 }
 
@@ -241,6 +241,26 @@ a {
   background: #fff1e4;
   color: #ff5c5f;
   border: #ff5c5f 4px solid;
+}
+
+.bottom-button {
+  border: #fff1e4 4px solid;
+}
+
+.bottom-button:hover {
+  background: #ff5c5f;
+  color: #fff1e4;
+  border: #fff1e4 4px solid;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  background: gray;
+  color: white;
+}
+
+.submit-button:hover {
+  opacity: 20%;
 }
 
 .hero-div {

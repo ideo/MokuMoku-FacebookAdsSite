@@ -18,7 +18,7 @@ var en = {
     "bookingParagraph": "Whether you’re planning ahead or need a seat in a pinch, we have you covered.",
     "modalTitle": "We want to hear from you!",
     "modalText": "Thank you for your interest in Get Seated! We are still fine-tuning the details, but when it’s ready for launch, you’ll be the first to know. <br><br>Until then, we would love to get your feedback. If you’re willing to speak with us about your cafe-working needs, please provide your email address. <br><br>We promise not to spam or share your email with anyone else.",
-    "signUpButton": "BOOK NOW - STARTING AT ¥500"
+    "signUpButton": "BOOK NOW"
 
 };
 
@@ -30,7 +30,7 @@ var ja = {
     "bookingParagraph": "事前に予約しておきたい時や、今すぐ予約したい時に、いつでも空席を予約できます。",
     "modalTitle": "あなたの意見をお寄せください！",
     "modalText": "Get Seatedにご興味をお持ち頂きありがうございます！Get Seatedはまだ開発段階のアプリですが、ローンチの際には、いち早くお知らせさせて頂きます。<br/><br/>それまでの間、皆様からフィードバックを頂戴し、アプリの開発に活かしたいと考えています。もし、意見をご提供頂けるようでしたら、下記フォームより、メールアドレスをお送りください。<br/><br/>お送り頂きましたいただいたメールアドレスは、あなたからフィードバックを頂戴する目的でのみ利用し、スパム行為や第三者への共有は一切致しません。",
-    "signUpButton": "今すぐ予約 (500円~)"
+    "signUpButton": "今すぐ予約"
 };
 
 function setLanguage(lang) {
