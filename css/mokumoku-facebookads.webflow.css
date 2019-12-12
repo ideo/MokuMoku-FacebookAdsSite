@@ -3,6 +3,10 @@
   font-size: 72px;
 }
 
+a {
+  color: #ff5c5f;
+}
+
 .columns {
   width: auto;
   height: auto;
@@ -226,15 +230,17 @@
   position: absolute;
   margin-top: 80px;
   background: #ff5c5f;
-  /* border: #ff5c5f 8px solid; */
+  border: #ff5c5f 4px solid;
   color: white;
   font-size:18px;
+  transition: background,color 0.2s ease-in-out;
   /* border-radius: 200px; */
 }
 
 .hero-button:hover {
-  background: #ff5c5f;
-  color: white;
+  background: #fff1e4;
+  color: #ff5c5f;
+  border: #ff5c5f 4px solid;
 }
 
 .hero-div {
@@ -297,7 +303,7 @@
 }
 
 .modalwrapper {
-  display: none !important;
+  display: block !important;
   position: fixed;
   left: 0%;
   top: 0%;
@@ -309,13 +315,19 @@
   background-color: rgba(0, 0, 0, 0.32);
   text-align: center;
   opacity: 0 !important;
-  transition: opacity 1s 1s;
-  -webkit-transition: opacity 1s 1s;
+  transition: opacity 0.4s 0s;
+  -webkit-transition: opacity 0.4s 0s;
+  visibility: hidden;
 }
 
 .modal-inView {
   opacity: 1 !important;
-  display: block !important;
+  visibility: visible;
+  /* display: block !important; */
+}
+
+.modal-inView .div-block-10 {
+  transform: translateY(-50%);
 }
 
 
@@ -333,7 +345,8 @@
   padding: 24px 48px;
   border-radius: 10px;
   background-color: #fff;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
+  transition: transform 0.5s ease-in-out 0s;
 }
 
 .paragraph-2 {
@@ -350,6 +363,7 @@
 }
 
 .heading-6 {
+  font-family: 'Noto Sans JP', sans-serif;
   font-size:24px;
   text-align: left;
 }
