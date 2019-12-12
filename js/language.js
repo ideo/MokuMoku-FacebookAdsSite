@@ -18,7 +18,11 @@ var en = {
     "bookingParagraph": "Whether you’re planning ahead or need a seat in a pinch, we have you covered.",
     "modalTitle": "We want to hear from you!",
     "modalText": "Thank you for your interest in Get Seated! We are still fine-tuning the details, but when it’s ready for launch, you’ll be the first to know. <br><br>Until then, we would love to get your feedback. If you’re willing to speak with us about your cafe-working needs, please provide your email address. <br><br>We promise not to spam or share your email with anyone else.",
-    "signUpButton": "BOOK NOW"
+    "signUpButton": "BOOK NOW",
+    "thankYou": "Thank you! Your submission has been received!",
+    "error": "Oops! Something went wrong while submitting the form.",
+    "submit": "Submit"
+     
 
 };
 
@@ -30,20 +34,13 @@ var ja = {
     "bookingParagraph": "事前に予約しておきたい時や、今すぐ予約したい時に、いつでも空席を予約できます。",
     "modalTitle": "あなたの意見をお寄せください！",
     "modalText": "Get Seatedにご興味をお持ち頂きありがうございます！Get Seatedはまだ開発段階のアプリですが、ローンチの際には、いち早くお知らせさせて頂きます。<br/><br/>それまでの間、皆様からフィードバックを頂戴し、アプリの開発に活かしたいと考えています。もし、意見をご提供頂けるようでしたら、下記フォームより、メールアドレスをお送りください。<br/><br/>お送り頂きましたいただいたメールアドレスは、あなたからフィードバックを頂戴する目的でのみ利用し、スパム行為や第三者への共有は一切致しません。",
-    "signUpButton": "今すぐ予約"
+    "signUpButton": "今すぐ予約",
+    "thankYou": "ご協力ありがとうございました！　投稿は無事に送信されました。",
+    "error": "何らかのエラーが発生し、正常に投稿が送信されませんでした。",
+    "submit": "送信"
 };
 
 function setLanguage(lang) {
-
-    // var json = require("js/language/" + lang + ".json");
-    console.log("Hello");
-    // getLanguage();
-    console.log(lang);
-    // $.getJSON("js/language/" + lang + ".json", function(json) {
-    //     console.log(json); // this will show the info it in firebug console
-    // });
-    // localStorage.setItem('language', lang);
-
     $(document).ready(function(){
         var langauge;
         switch (lang) {
@@ -51,7 +48,6 @@ function setLanguage(lang) {
             language = en;
             $('#ja').addClass("languagelink");
             $('#en').removeClass("languagelink");
-            // console.log($('#ja').classList);
                 break;
             case "ja":
             language = ja;
@@ -70,6 +66,9 @@ function setLanguage(lang) {
         $('#modalText').html(language.modalText);
         $('#signUpButton').html(language.signUpButton);
         $('#signUpButton2').html(language.signUpButton);
+        $('#thankYou').html(language.thankYou);
+        $('#error').html(language.error);
+        $('#submit-form').attr('value', language.submit);
         // console.log($("#find"));
         // console.log(language);
         // $('#find').text(ja.hero);
